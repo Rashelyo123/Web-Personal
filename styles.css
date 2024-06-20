@@ -1,0 +1,191 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4caf50;
+}
+
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+.hero .profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #4caf50;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #45a049;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 20px;
+}
+
+.skills-list h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-link {
+  flex: 1 1 45%;
+  margin: 10px;
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: inherit; /* Menjaga warna teks agar tidak berubah */
+}
+
+.project {
+  margin: 0; /* Menghapus margin yang tidak diperlukan */
+  padding: 20px;
+  border: 3px solid #ddd; /* Memperbesar ukuran border */
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Pusatkan teks di dalam kotak */
+}
+
+.project img {
+  width: 100%;
+  height: auto; /* Mengatur tinggi otomatis agar proporsi gambar terjaga */
+  object-fit: contain; /* Memastikan seluruh gambar terlihat */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}

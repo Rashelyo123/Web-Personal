@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing Page</title>
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Menghubungkan Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">RASHELYO SYAWALIAN</div>
+        <ul>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#skills">Keahlian Utama</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <img src="aku.jpg" alt="Foto Saya" class="profile-image" />
+        <h1>Imagination is more important than knowledge</h1>
+        <p>
+          Together we achieve more than any single person could ever do alone.
+        </p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Core Skills: Game Development: Proficient in creating 2D and 3D games
+        with Unity, including gameplay design, scripting, and optimization.
+        Graphic Design: Expert in designing posters, logos, and other graphic
+        elements using Figma, with a portfolio that reflects creativity and
+        attention to detail. Writing & Documentation: Experienced in writing
+        well-structured and informative proposals, articles, and journals.
+        Database Management: Skilled in designing, implementing, and managing
+        efficient and integrated databases. Programming: Proficient in C, C#,
+        and Visual Basic, with experience in developing desktop applications and
+        other software solutions. Experience & Projects: Developed several indie
+        games released on prominent platforms like itch.io. Provided graphic
+        design services to various clients, creating engaging and functional
+        designs. Authored and published a range of technical documents,
+        including project proposals, technology articles, and scientific
+        journals. Managed and developed databases for various applications,
+        ensuring data integrity and optimal system performance. Developed
+        software applications using C, C#, and Visual Basic. Vision & Mission:
+        My vision is to continuously grow in the fields of technology and
+        design, creating innovative solutions that combine aesthetics and
+        functionality. My mission is to help clients achieve their goals through
+        high-quality professional services backed by deep technical knowledge.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Keahlian Utama</h2>
+      <ul class="skills-list">
+        <li>
+          <h3>Pengembangan Game</h3>
+          <p>
+            2D dan 3D Games dengan Unity: Terampil dalam menciptakan game 2D dan
+            3D termasuk desain gameplay, scripting, dan optimasi.
+          </p>
+        </li>
+        <li>
+          <h3>Desain Grafis</h3>
+          <p>
+            Figma: Ahli dalam merancang poster, logo, dan elemen grafis lainnya
+            dengan portofolio yang mencerminkan kreativitas dan perhatian
+            terhadap detail.
+          </p>
+        </li>
+        <li>
+          <h3>Penulisan & Dokumentasi</h3>
+          <p>
+            Dokumen Teknis: Berpengalaman dalam menulis proposal yang
+            terstruktur dengan baik, artikel, dan jurnal yang informatif.
+          </p>
+        </li>
+        <li>
+          <h3>Manajemen Basis Data</h3>
+          <p>
+            Desain dan Implementasi Basis Data: Mahir dalam merancang,
+            mengimplementasikan, dan mengelola basis data yang efisien dan
+            terintegrasi.
+          </p>
+        </li>
+        <li>
+          <h3>Pemrograman</h3>
+          <p>
+            Bahasa Pemrograman: Terampil dalam C, C#, dan Visual Basic dengan
+            pengalaman dalam mengembangkan aplikasi desktop dan solusi perangkat
+            lunak lainnya.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portofolio</h2>
+      <div class="projects">
+        <a href="https://rashelyo.itch.io/" class="project-link">
+          <div class="project">
+            <h3>Project Game Horror</h3>
+            <img src="JantiTheFactos.png" alt="Project 1" />
+            <p>
+              This is a horror-themed game that is still in development using
+              the Unity engine. The game tells the story of a journalist
+              investigating a cursed village.
+            </p>
+          </div>
+        </a>
+        <a href="https://rashelyo.itch.io/" class="project-link">
+          <div class="project">
+            <h3>Project Game Education</h3>
+            <img src="Remechanised.png" alt="Project 2" />
+            <p>
+              This is an educational game that tells the story of a boy named
+              Arthur who is fond of mechanical things. One day, Arthur
+              encounters a broken white robot, and he wants to repair the robot
+              by finding the necessary components. However, during his journey
+              to find these components, Arthur faces various dangers that await
+              him.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Rashelyo Syawalian. All rights reserved.</p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("service_h5kon0x"); // Ganti dengan User ID Anda
+      })();
+    </script>
+    <!-- Memuat script JavaScript terpisah -->
+    <script src="script.js"></script>
+  </body>
+</html>
