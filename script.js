@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Mengirim email menggunakan EmailJS
       emailjs
-        .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        .send("service_3xzf2by", "template_o722j2e", {
           from_name: name,
           from_email: email,
           message: message,
